@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+header{
+    text-align: center;
+    background-image: url('../img/fundo-topo.jpg');
+    padding: 10px 0;
+}
+
+header h1{
+    margin: 0;
+    height: 84px;
+}
+
+nav{
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav li{
+    display: inline;
+    margin-right: 10px;
+    padding-right: 27px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover{
+    color: #6dd432;
+}
+
+.patinha {
+    display: inline;
+    background-image: url('../img/patinha-preta.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-right: 10px;
+    padding-right: 27px;
+}
+
+
+.fundo-verde{
+    background-color: #bdff9c;
+}
+
+.container{
+    width: 900px;
+    margin: auto;
+    padding: 56px 0;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container .col{
+    width: 430px;
+}
+
+.texto-centralizado{
+    text-align: center;
+}
+
+.produtos{
+    width: 235px;
+}
+
+.produtos figure{
+    border: 1px solid #c4c4c4;
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+}
+
+.produtos figure img{
+    vertical-align: middle;
+}
+
+.btn-pata{
+    border: 1px solid #91e467;
+    background-color: #d2fbbd;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.contato {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form{
+    width: 380px;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 1px solid #6dd432;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    resize: none;
+}
+
+iframe{
+    width: 100%;
+}
+
+footer.container{
+    text-align: center;
+    font-size: x-small;
+    border-top: 1px solid #6dd432;
+    padding: 15px 0px;
+}
+
+@media (max-width: 880px) {
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0; 
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .fundo-verde{
+        width: 100%;
+    }
+
+    .col{
+        width:100%;
+    }
+
+    .texto-centralizado, h2{
+        text-align: center;
+    }
+
+    .flex-container .col {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .produtos{
+        margin-bottom: 20px;
+    }
+
+    .cachorro{
+        width: 100%;
+        padding: 0px 15%;
+    }
+
+    .justify{
+        text-align: justify;
+        padding: 20px 0px;
+    }
+}
+
+@media (max-width: 480px){
+    ul{
+        width:100%;
+    }
+
+    nav li {
+        display:inline;
+        background-position: right ;
+        margin-right: 0px;
+    }
+
+    .cachorro{
+        width: 100%;
+        padding: 5px 2%;
+    }
+
+    .produtos{
+        margin-bottom: 20px;
+    }
+
+    .flex-container{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    iframe{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
